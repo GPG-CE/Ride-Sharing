@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAYMENT"
+        android:textSize="40dp"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/card_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="card number"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="card number"
+         />
+
+    <TextView
+        android:id="@+id/cv_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cvv"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="cvv"
+        />
+
+    <TextView
+        android:id="@+id/holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Holder name"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/hld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="holder name"
+        />
+
+    <TextView
+        android:id="@+id/expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry date"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="expiry date"
+        />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

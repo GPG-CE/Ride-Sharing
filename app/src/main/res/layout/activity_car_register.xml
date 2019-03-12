@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".car_register"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Details"
+        android:fontFamily="@font/josefin"
+        android:textColor="#212121"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:id="@+id/car_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Number"
+        android:textSize="20dp"
+        android:textColor="#807c7c"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/car_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Model"
+        android:textSize="20dp"
+        android:textColor="#807c7c"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/total_seat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total seats"
+        android:textSize="20dp"
+        android:textColor="#807c7c"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Address"
+        android:textSize="20dp"
+        android:textColor="#807c7c"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/driving_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Driving License"
+        android:textSize="20dp"
+        android:textColor="#807c7c"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_car_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="#0a4bfc"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        />
+</LinearLayout>

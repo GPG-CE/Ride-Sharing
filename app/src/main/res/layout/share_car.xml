@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".share_car">
+
+    <TextView
+        android:id="@+id/addcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share car"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/josefin"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addcar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/To"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="To"
+                android:textSize="30dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To"
+                android:paddingLeft="10dp"
+                android:text="" />
+            <TextView
+                android:id="@+id/via"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="via"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editvia"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="via"
+                    />
+                <EditText
+                    android:id="@+id/editvia2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="via"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/From"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="From"
+                android:textSize="30dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autofrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="From"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Date"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editdate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2sp"
+                android:background="@drawable/eidttext"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="MM/dd/yy"
+                android:inputType="none"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Time"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/edittime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2sp"
+                android:background="@drawable/eidttext"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="hh-mm-ss"
+                android:inputType="time"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/facility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="facility"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spiner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:entries="@array/ft"
+                android:layout_marginEnd="20dp"
+                android:paddingLeft="10dp"
+                >
+            </Spinner>
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="$$ ride price"
+                />
+
+            <Button
+                android:id="@+id/btnaddcar"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#0569ff"
+                android:text="Add  car"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

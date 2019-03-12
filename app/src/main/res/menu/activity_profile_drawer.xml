@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"
+            android:checkable="false"
+            />
+        <item
+            android:id="@+id/nav_car"
+            android:icon="@drawable/car"
+            android:title="Car Register"
+            android:checkable="false"
+            />
+
+        <item
+            android:id="@+id/nav_upcome"
+            android:icon="@drawable/upcome"
+            android:title="UpComing     Ride"
+            android:checkable="false" />
+
+        <item
+            android:icon="@drawable/your_car"
+            android:id="@+id/nav_yurcar"
+            android:title="Your Car"
+            android:checkable="false" />
+        <item
+            android:icon="@drawable/location"
+            android:id="@+id/nav_Driver_Location"
+            android:title="Driver Location"
+            android:checkable="false" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feed"
+                android:icon="@drawable/feedback"
+                android:title="Feedback"
+                android:checkable="false"/>
+            <item
+                android:id="@+id/nav_rep"
+                android:icon="@drawable/report"
+                android:title="Report"
+                android:checkable="false" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                android:checkable="false" />
+        </menu>
+    </item>
+
+</menu>

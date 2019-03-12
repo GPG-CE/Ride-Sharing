@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@drawable/carlogo"
+        android:layout_marginHorizontal="60dp"
+        />
+
+    <TextView
+        android:id="@+id/txuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Email"
+        android:textColor="#0E0D0D"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="-10dp"
+        />
+    <EditText
+        android:id="@+id/edtuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/txpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0E0D0D"
+        android:text="Password"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:paddingLeft="5dp"
+        />
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginLeft="30dp"
+        android:textColor="#026358"
+        android:background="#1CF5E0"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txreg"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="125dp"
+        android:layout_marginTop="30dp"
+        android:text="Must Register First"
+        android:textStyle="italic"
+        android:textColor="#0E31F5"
+        android:clickable="true"
+        />
+    <ProgressBar
+        android:id="@+id/progres"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
