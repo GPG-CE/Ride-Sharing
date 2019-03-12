@@ -36,6 +36,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         ema = findViewById(R.id.edemail);
         pass = findViewById(R.id.edpassword);
         /*button code*/
+        //
         regi = findViewById(R.id.btnregister);
         regi.setOnClickListener(this);
     }
